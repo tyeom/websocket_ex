@@ -46,4 +46,15 @@ class SymbolInfo {
       chgRate: chgRate,
     );
   }
+
+  Map<String, dynamic> toJson() =>
+      {
+        'symbol': symbol,
+        'openPrice': openPrice,
+        'lowPrice': lowPrice,
+        'highPrice': highPrice,
+        'closePrice': closePrice,
+        'volume': volume,
+        'chgRate': chgRate,
+    };
 }
